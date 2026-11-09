@@ -1,78 +1,61 @@
 # WajaPhysics
 
-**Resolvedor de ejercicios de cinemática desarrollado en C.**
+A physics exercise solver written in **C**, designed to calculate and solve basic kinematics problems.
 
-WajaPhysics es un proyecto personal cuyo objetivo es facilitar la resolución de ejercicios de física relacionados con el movimiento, aplicando las fórmulas matemáticas correspondientes mediante un programa escrito en C.
+This is a personal programming project created to put physics knowledge into practice while learning C programming.
 
-El proyecto está desarrollado desde cero como una forma de aprender programación, practicar C y comprender cómo trasladar problemas físicos a código.
+## Features
 
-## Características
+### MRU (Uniform Rectilinear Motion)
+- Position calculations.
+- Motion-related exercise solving.
 
-### MRU — Movimiento Rectilíneo Uniforme
-- Cálculo de posición final.
-- Cálculo de velocidad.
-- Cálculo de tiempo.
+### MRUA (Uniformly Accelerated Rectilinear Motion)
+- Position calculations.
+- Motion-related exercise solving.
 
-### MRUA — Movimiento Rectilíneo Uniformemente Acelerado
-- Cálculo de posición final.
-- Cálculo de velocidad final.
-- Cálculo de velocidad inicial.
-- Cálculo de aceleración.
-- Cálculo del tiempo, incluyendo los casos con dos posibles soluciones.
+### Mixed MRU + MRUA
+- Solving encounter problems between two objects.
+- Calculating the time at which two objects meet.
+- Calculating the position where two objects meet.
+- Handling quadratic equations through their discriminant:
+  - Two real solutions.
+  - One real solution (double root).
+  - No real solutions.
+- Handling special cases where acceleration is zero.
 
-### Otras características
-- Selección del tipo de movimiento y de la incógnita.
-- Comprobaciones para evitar determinados cálculos no válidos.
-- Resultados y mensajes de error diferenciados mediante colores en la terminal.
+## Technologies
 
-## Tecnologías utilizadas
+- **Language:** C
+- **Compiler:** GCC
+- **Libraries:** `stdio.h`, `stdlib.h`, `math.h`, `windows.h`
 
-- **Lenguaje:** C
-- **Compilador:** GCC
-- **Entorno de desarrollo:** Visual Studio Code
-- **Bibliotecas:** `stdio.h`, `math.h` y otras bibliotecas estándar de C.
+## Running the project
 
-## Cómo ejecutar el programa
+The project is currently designed for Windows.
 
-Es necesario tener GCC instalado.
-
-1. Clona este repositorio o descarga sus archivos.
-2. Abre una terminal en la carpeta del proyecto.
-3. Compila el programa:
+Compile using GCC:
 
 ```bash
-gcc resolvedor.c -o WajaPhysics
+gcc main.c -o WajaPhysics.exe -lm
 ```
 
-4. Ejecuta el programa:
-
-En Windows:
-
-```powershell
-.\WajaPhysics.exe
-```
-
-En Linux:
+Then run:
 
 ```bash
-./WajaPhysics
+WajaPhysics.exe
 ```
 
-## Limitaciones conocidas
+## Project status
 
-- El programa necesita que el usuario introduzca manualmente los datos del ejercicio.
-- No interpreta enunciados escritos en lenguaje natural.
-- Los cálculos están limitados a los tipos de movimiento y operaciones implementados.
-- Algunas situaciones físicas pueden requerir interpretar las soluciones antes de decidir cuál corresponde al ejercicio.
+<ins>Currently in development.</ins>
 
-## Próximamente
+The main calculation systems are implemented and are being tested and improved.
 
-- Terminar los ejercicios mixtos de MRU y MRUA.
-- Mejorar las comprobaciones y el tratamiento de errores.
-- Añadir nuevos tipos de movimiento, como el tiro parabólico.
+## About
 
-## Sobre el proyecto
+WajaPhysics is a learning project focused on understanding how mathematical and physical equations can be translated into programming logic.
 
-WajaPhysics es un proyecto personal de aprendizaje. Está construido poco a poco, experimentando con C y aplicando los conocimientos adquiridos a problemas reales de física.
+The goal is not just to obtain the correct result, but to understand how the program reaches it.
 
-**Hecho por Wajatone.**
+**Made by Wajatone.**
